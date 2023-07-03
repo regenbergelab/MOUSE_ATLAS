@@ -10,3 +10,6 @@ berlin_cohort_rnaseq_fpkm.txt is RNA-seq data for the Berlin neuroblastoma cohor
 ### Code
 #### Genes and Gene Expression
 ExpressionAnalysis.R screens for deregulated genes close to palm tree-associated rearrangements.
+
+## Contact
+If you have any questions concerning code or data, please do not hesitate to contact us at liang.xue@bio.ku.dk.
