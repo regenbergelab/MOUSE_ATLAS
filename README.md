@@ -2,7 +2,7 @@ This repository contains code and data from the mouse eccDNA Atlas paper.
 
 ## Data
 ### Circle data:
-CircleseqCircles.bed contains Circle-seq circle calls for our dataset.
+[CircleseqCircles.bed] contains Circle-seq circle calls for our dataset.
 
 ### Expression Data
 berlin_cohort_rnaseq_fpkm.txt is RNA-seq data for the Berlin neuroblastoma cohort.
