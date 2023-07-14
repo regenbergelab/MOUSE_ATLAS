@@ -1,4 +1,4 @@
-# Mouse Atlas - Fig1 - 01_pca_distance - Liver
+# Mouse Atlas - Fig2b - pca_distance - Liver
 
 rm(list = ls())
 options(stringsAsFactors = FALSE)
