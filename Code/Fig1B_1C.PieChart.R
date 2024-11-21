@@ -32,7 +32,7 @@ pie_chart <- ggplot(summary_df, aes(x = "", y = proportion, fill = category)) +
   geom_bar(stat = "identity", width = 1, color = "black") +  
   coord_polar("y", start = 0) +
   labs(title = "Ecc_Len Distribution", fill = "Category") +
-  scale_fill_manual(values = my_colors) +  # 设置颜色
+  scale_fill_manual(values = my_colors) +
   theme_void()
 
 ggsave(pie_chart, file = "pie_chart.pdf") # Fig1B-3
