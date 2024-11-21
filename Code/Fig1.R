@@ -35,10 +35,7 @@ pie_chart <- ggplot(summary_df, aes(x = "", y = proportion, fill = category)) +
   scale_fill_manual(values = my_colors) +
   theme_void()
 
-ggsave(pie_chart, file = "pie_chart.pdf") # Fig1B-3
-
 df <- data.frame(ecc_Len = hh1$ecc_Len)
-
 cuts <- c(0, 2000, 10000)
 colors <- c("#fde8c6", "#fbc979")
 
@@ -51,18 +48,14 @@ histogram1 <- ggplot(df, aes(x = ecc_Len)) +
 histogram2 <- ggplot(df, aes(x = ecc_Len)) +
   geom_histogram(aes(y = ..density..), bins = 1000, fill = "skyblue", color = "#fde8c6", alpha = 0.7) +  
   labs(title = "Histogram of ecc_Len", x = "ecc_Len", y = "Density") +
-  theme_classic()+
+  theme_classic(
+    
+  )+
   xlim(0, 10000)+
   geom_vline(xintercept = 2000, color = "black", linetype = "solid")
-
-ggsave(histogram1, file = "histogram1.pdf") # Fig1B-1
-ggsave(histogram2, file = "histogram2.pdf") # Fig1B-2
-
 histogram3 <- ggplot(df, aes(x = ecc_Len)) +
   geom_histogram(aes(y = ..density..), bins = 1000, color = "#fde8c6", alpha = 0.7) +  
   labs(title = "Histogram of ecc_Len", x = "ecc_Len", y = "Density") +
   theme_classic()+
   xlim(100, 2000)+
   geom_vline(xintercept = c(200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800), color = "gray", linetype = "dashed")
-
-ggsave(histogram3, file = "histogram3.pdf") # Fig1C
