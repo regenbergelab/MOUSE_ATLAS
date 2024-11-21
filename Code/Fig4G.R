@@ -1,3 +1,6 @@
+rm(list = ls())
+options(stringsAsFactors = FALSE)
+
 library(clusterProfiler)
 library("org.Mm.eg.db")
 library(ggplot2)
